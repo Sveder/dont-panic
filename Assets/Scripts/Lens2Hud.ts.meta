@@ -1,0 +1,139 @@
+- !<AssetImportMetadata/140e15a9-7a49-4b8a-a835-0316d88c3f2e>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 50e50dbb-03f4-4238-a26b-bfde2cf5c76c
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 50e50dbb-03f4-4238-a26b-bfde2cf5c76c
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 4fe3710f-d2ec-4484-bab0-53876f2b8ae7
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/4fe3710f-d2ec-4484-bab0-53876f2b8ae7>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: b1e4c11c-0a03-4145-ba34-6e76afac4d7d
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    alertArea: false
+    alertCard: false
+    alertText: false
+    alertUrl: false
+    arrow: false
+    cameraTexture: false
+    clockMode: false
+    clockRate: false
+    demoAlertTime: false
+    demoSecondAlarmAt: false
+    demoSirenAt: false
+    infoText: false
+    insidePanel: false
+    insideText: false
+    internetModule: false
+    marker: false
+    markerText: false
+    offset: false
+    paceMps: false
+    panel: false
+    recordedAlarm: false
+    showDebug: false
+    siren: false
+    source: false
+    staySeconds: false
+    stopButton: false
+    timeText: false
+    useVideoTexture: false
+    video: false
+    videoBackground: false
+    videoFps: false
+    viewFlash: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - source: replay
+      useVideoTexture: false
+      video: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      videoBackground: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      clockMode: frames
+      videoFps: !<float> 30.000000
+      clockRate: !<float> 1.000000
+      cameraTexture: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      siren: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      arrow: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      alertCard: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      alertText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      panel: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      timeText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      marker: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      markerText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      insidePanel: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      insideText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      infoText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      showDebug: false
+      viewFlash: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      offset: !<float> 0.000000
+      staySeconds: !<float> 600.000000
+      paceMps: 1.200000
+      demoAlertTime: !<float> -1.000000
+      demoSirenAt: !<float> -1.000000
+      recordedAlarm: false
+      stopButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      demoSecondAlarmAt: !<float> -1.000000
+      alertUrl: ""
+      alertArea: ""
+      internetModule: !<reference.InternetModule> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input string source = "replay" {"hint":"T64: replay = the recorded walk and the video (default). live = the Spectacles GPS and compass"}'
+    - // @input bool useVideoTexture
+    - // @input Asset.Texture video
+    - // @input SceneObject videoBackground
+    - '// @input string clockMode = "lens" {"hint":"T47 replay clock: lens | frames | stamp (texture when Use Video Texture is on)"}'
+    - '// @input float videoFps = 30 {"hint":"Frames per second of the walk video (frames clock)"}'
+    - '// @input float clockRate = 1 {"hint":"Lens clock correction: video seconds per Lens second (1 = none). Measure with the timecode video, see README"}'
+    - '// @input Asset.Texture cameraTexture {"hint":"Device Camera Texture: the preview video frames drive the frames/stamp clock"}'
+    - // @input Component.AudioComponent siren
+    - // @input SceneObject arrow
+    - // @input SceneObject alertCard
+    - // @input Component.Text alertText
+    - // @input SceneObject panel
+    - // @input Component.Text timeText
+    - // @input SceneObject marker
+    - // @input Component.Text markerText
+    - // @input SceneObject insidePanel
+    - // @input Component.Text insideText
+    - // @input Component.Text infoText
+    - '// @input bool showDebug {"hint":"T56: show the replay debug line (t, heading, pitch) at the bottom. Off for every demo"}'
+    - '// @input SceneObject viewFlash {"hint":"T30: full-screen image that flashes red when an alarm starts (for a user who cannot hear the siren)"}'
+    - '// @input float offset {"hint":"Seconds the video is shifted against the walk track (track t = video t + offset)"}'
+    - '// @input float staySeconds = 600 {"hint":"Stay in the shelter countdown, seconds. 600 on the real Lens; set e.g. 20 to see the end in a preview"}'
+    - '// @input float paceMps = 1.2 {"hint":"Walking pace for the time check, m/s (1.2 = with two children)"}'
+    - '// @input float demoAlertTime = -1 {"hint":"Demo: alert time in seconds instead of the area time (e.g. 20 shows the take-cover line). -1 = area time"}'
+    - '// @input float demoSirenAt = -1 {"hint":"Demo (T30): no recorded alert; the siren path raises the alarm at this track time, as if the microphone heard it. -1 = off"}'
+    - '// @input bool recordedAlarm {"hint":"T62: true = the alarm time recorded in the track starts the alert. false (default) = only the siren detector (SirenMic) raises the alarm"}'
+    - '// @input SceneObject stopButton {"hint":"T62: Stop button image, shown from the alert on"}'
+    - '// @input float demoSecondAlarmAt = -1 {"hint":"Demo: a second alarm at this track time restarts the sequence. -1 = off"}'
+    - '// @input string alertUrl = "" {"hint":"T65: URL of the alert relay, for example http://<server>/alerts/hfc/ . Empty (default) = no official alert path and no network request"}'
+    - '// @input string alertArea = "" {"hint":"T65: Home Front Command area name prefixes, comma separated, for example: תל אביב. Empty = the official alert path stays off"}'
+    - '// @input Asset.InternetModule internetModule {"hint":"T65: add an Internet Module asset and wire it here to use the official alert path. See the README about the permission limit"}'

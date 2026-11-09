@@ -1,0 +1,58 @@
+- !<AssetImportMetadata/c9ac9dca-6086-422e-b19a-87e633cdfed7>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 3283fbf3-54d9-45ae-b851-218d1732ac72
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 3283fbf3-54d9-45ae-b851-218d1732ac72
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> b338b433-34b7-4b89-b9f1-26b1770aae8a
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/b338b433-34b7-4b89-b9f1-26b1770aae8a>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 7d00399e-e9a9-487b-9fbc-5d139b7f5e91
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    fileAudio: false
+    fileStartAt: false
+    hud: false
+    micAudio: false
+    source: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - source: mic
+      micAudio: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
+      fileAudio: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
+      fileStartAt: !<float> 3.000000
+      hud: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input string source = "mic" {"hint":"mic or file"}'
+    - '// @input Asset.AudioTrackAsset micAudio {"hint":"Audio From Microphone asset"}'
+    - '// @input Asset.AudioTrackAsset fileAudio {"hint":"Editor fallback: the siren recording as an Audio Track asset"}'
+    - '// @input float fileStartAt = 3 {"hint":"Seconds after the Lens start before the file fallback starts to read"}'
+    - // @input AssignableType_1 hud
